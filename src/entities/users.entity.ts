@@ -1,8 +1,16 @@
 import {
+    BeforeInsert,
+    BeforeUpdate,
     Column,
     Entity,
+    OneToMany,
+    OneToOne,
 } from "typeorm";
 import { BaseEntity } from "./baseEntity.entity";
+import { getRounds, hashSync } from "bcryptjs";
+import { SalesAd } from "./salesAd.entity";
+import { Address } from "./addresses.entity";
+import SaleComments from "./salesComments.entity";
 
 export enum Role {
     seller = "seller",
@@ -40,4 +48,25 @@ class User extends BaseEntity {
 
     @Column({ type: "enum", enum: Role })
     role: string;
+
+    @OneToMany(() => SalesAd, (sales) => sales.user)
+    sales: SalesAd[];
+
+    @OneToOne(() => Address, (address) => address.user)
+    address: Address;
+
+    @OneToMany(() => SaleComments, (salesComments) => salesComments.user)
+    comments: SaleComments[];
+
+    @BeforeInsert()
+    @BeforeUpdate()
+    encriptedPass() {
+        const passHashed: number = getRounds(this.password);
+
+        if (!passHashed) {
+            this.password = hashSync(this.password, 10);
+        }
+    }
 }
+
+export { User };
