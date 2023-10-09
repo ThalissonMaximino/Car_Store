@@ -1,12 +1,16 @@
+import express, { json } from "express";
 import "express-async-errors"
 import "reflect-metadata"
-import express from "express"
-
+import routes from "./routers";
+import middlewares from "./middlewares";
 
 
 const app = express()
+app.use(json());
 app.use(express.json())
 
-app.get("/", (req, res) => {res.json({message: "hello world"})})
+app.use("/users", routes.users);
+
+app.use(middlewares.handleError);
 
 export default app
