@@ -2,7 +2,7 @@ import { Router } from "express";
 import controllers from "../controllers";
 import schemas from "../schemas";
 import middlewares from "../middlewares";
-import seedController from "../database/seed/seed.controller";
+
 
 
 const salesAd: Router = Router();
@@ -13,12 +13,6 @@ salesAd.post(
     middlewares.ensureIsSeller,
     middlewares.validateSchema(schemas.salesAd.request),
     controllers.salesAd.create
-);
-salesAd.post(
-    "/seed",
-    middlewares.ensureAuth,
-    middlewares.ensureIsSeller,
-    seedController
 );
 
 salesAd.get("", middlewares.paginateSalesAd, controllers.salesAd.readAll);

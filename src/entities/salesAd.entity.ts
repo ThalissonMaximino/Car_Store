@@ -1,5 +1,4 @@
 import { Column, Entity, ManyToOne, OneToMany } from "typeorm";
-
 import { BaseEntity } from "./baseEntity.entity";
 import { User } from "./users.entity";
 import SaleComments from "./salesComments.entity";
@@ -9,7 +8,6 @@ export enum Engine {
     hybrid = "hybrid",
     electric = "electric",
 }
-
 @Entity("salesAd")
 class SalesAd extends BaseEntity {
     @Column({ type: "varchar", length: 255 })
