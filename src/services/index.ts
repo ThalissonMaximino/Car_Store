@@ -1,12 +1,12 @@
-// import salesAd from "./salesAd";
+import salesAd from "./salesAd";
 import users from "./users";
-// import addresses from "./addresses";
+import addresses from "./addresses";
 // import salesCommentsService from "./salesComments";
 
 const services = {
     users,
-    // salesAd,
-    // addresses,
+    salesAd,
+    addresses
     // salesCommentsService,
 };
 
