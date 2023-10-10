@@ -1,10 +1,9 @@
 import { Router } from "express";
-
 import controllers from "../controllers";
 import schemas from "../schemas";
 import middlewares from "../middlewares";
 import seedController from "../database/seed/seed.controller";
-// import seedController from "../database/seed/seed.controller";
+
 
 const salesAd: Router = Router();
 
@@ -23,6 +22,7 @@ salesAd.post(
 );
 
 salesAd.get("", middlewares.paginateSalesAd, controllers.salesAd.readAll);
+
 salesAd.post(
     "/filter",
     middlewares.paginateSalesAd,
