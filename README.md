@@ -67,7 +67,7 @@ A car_store API oferece uma plataforma que conecta vendedores e compradores de c
 ```bash
   npm run dev
 ```
-## Endpoints /Developers
+## Endpoints 
 
 Method | Endpoint | Responsability
 | --- | --- | --- | 
