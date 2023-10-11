@@ -94,7 +94,7 @@ DELETE| comments/salesAd/:id | Deleta um comentário|
 
 ` POST /users - FORMATO DA REQUISIÇÃO `
  
-```bash
+```json
 {
 	"firstName": "Karina",
 	"lastName": "Doaespa",
@@ -123,7 +123,7 @@ Caso dê tudo certo, a resposta será assim:
 
 ` POST /users - FORMATO DA RESPOSTA - STATUS 201 `
 
-```
+```json
 {
 	"firstName": "Karina",
 	"lastName": "Doaespa",
@@ -147,7 +147,7 @@ Caso dê tudo certo, a resposta será assim:
 ```
 ` PATCH /users/update/:id - FORMATO DA REQUISIÇÃO `
 
-```
+```json
 {
 	"firstName": "karina",
 	"lastName": "doblackpink",
@@ -159,7 +159,7 @@ Caso dê tudo certo, a resposta será assim:
 
 `PATCH /users/update/:id - FORMATO DA RESPOSTA - STATUS 200`
 
-```
+```json
 {
 	"id": "b2fa0578-1fcf-4ebd-9346-105d8f75a81e",
 	"firstName": "karina",
@@ -180,7 +180,7 @@ Sem corpo de response.
 ## Address
 
 `PATCH /address - FORMATO DA REQUISIÇÃO`
-```
+```json
 {
 		"cep": "1203921039",
 		"state": "SP",
@@ -191,7 +191,7 @@ Sem corpo de response.
 }
 ```
 `PATCH /address - FORMATO DA RESPOSTA - STATUS 200`
-```
+```json
 {
 		"id": "8b8f50b5-cd9d-42b1-ad2d-21d5c2d93066",
 		"created_at": "1693415422288",
@@ -207,7 +207,7 @@ Sem corpo de response.
 ## Login
 
 `POST /login - FORMATO DA REQUISIÇÃO`
-```
+```json
 {
   "email": "karinaAespa@gmail.com",
   "password": "1234"
@@ -227,7 +227,7 @@ Sem corpo de response.
 Não é necessário nenhum corpo de request.
 
 `POST /login - FORMATO DA RESPOSTA - STATUS 200`
-```
+```json
 {
 	"prevPage": null,
 	"nextPage": null,
@@ -286,7 +286,7 @@ Não é necessário nenhum corpo de request.
 Não é necessário nenhum corpo de request.
 
 `GET /salesAd/:id - FORMATO DA RESPOSTA - STATUS 200`
-```
+```json
 {
 	"id": "75e75015-228b-4a8f-9919-82c0332d77dd",
 	"brand": "toyota",
@@ -361,7 +361,7 @@ Não é necessário nenhum corpo de request.
 `GET /salesAd/users/:userId - FORMATO DA RESPOSTA - STATUS 200`
 
 
-```
+```json
 {
 	"prevPage": null,
 	"nextPage": null,
@@ -428,7 +428,7 @@ Não é necessário nenhum corpo de request.
 
 `POST /salesAd - FORMATO DA REQUISIÇÃO`
 
-```
+```json
 	{
 		"model": "carro muito irado e show do aespa(elétrico)",
 		"brand": "toyota",
@@ -453,7 +453,7 @@ Não é necessário nenhum corpo de request.
 }
 ```
 `POST /salesAd - FORMATO DA RESPOSTA - STATUS 201`
-```
+```json
 {
 	"id": "75e75015-228b-4a8f-9919-82c0332d77dd",
 	"created_at": "1696919217190",
@@ -491,14 +491,14 @@ Não é necessário nenhum corpo de request.
 
 `POST /salesAd/filter - FORMATO DA REQUISIÇÃO`
 
-```
+```json
 {
 	 "color": "pink"
 }
 ```
 
 `POST /salesAd/filter - FORMATO DA RESPOSTA - STATUS 200`
-```
+```json
 {
 	"prevPage": null,
 	"nextPage": null,
@@ -554,7 +554,7 @@ Não é necessário nenhum corpo de request.
 ### Atualiza as informações do anúncio
 
 `PUT /salesAd/:id - FORMATO DA REQUISIÇÃO`
-```
+```json
 	{
 		"model": "carro muito mais  irado e muito mais show e editado com o patch do aespa(elétrico)",
 		"brand": "toyota",
@@ -580,7 +580,7 @@ Não é necessário nenhum corpo de request.
 
 ```
 `PUT /salesAd/:id - FORMATO DA RESPOSTA - STATUS 200`
-```
+```json
 {
 	"id": "75e75015-228b-4a8f-9919-82c0332d77dd",
 	"created_at": "1696919217190",
