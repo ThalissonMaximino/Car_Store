@@ -626,6 +626,133 @@ Não é necessário nenhum corpo de request.
 
 Não é necessário nenhum corpo de request.
 
+## /Comments 
+
+### Criação de comentário
+
+`POST /comments/salesAd/:salesAdId - FORMATO DA REQUISIÇÃO`
+```json
+{
+  "comment": "Muito bom!"
+}
+```
+
+`POST /comments/salesAd/:salesAdId - FORMATO DA RESPOSTA - STATUS 201`
+```json
+{
+	"id": "401a1089-cde7-44ee-a756-bd411e2bd019",
+	"comment": "Muito bom!",
+	"created_at": "1696986606722",
+	"user": {
+		"id": "c9051b4e-c1e5-468d-b094-6085221eb49f",
+		"firstName": "giselle",
+		"lastName": "doaespa",
+		"email": "giselleAespa@gmail.com",
+		"cpf": "00000000002",
+		"cellphone": "01234578901",
+		"birthdate": "2023-02-19",
+		"description": "oi eu sou a giselle do aespa",
+		"userImage": null,
+		"role": "buyer",
+		"created_at": "1696915346061"
+	},
+	"salesAd": {
+		"id": "75e75015-228b-4a8f-9919-82c0332d77dd",
+		"brand": "toyota",
+		"model": "carro muito irado e show do aespa(elétrico)",
+		"year": "2017",
+		"mileage": 70000,
+		"engine": "hybrid",
+		"isGoodPrice": true,
+		"price": 122223000,
+		"color": "pink",
+		"description": "we them girls we them girls we them girls",
+		"status": true,
+		"created_at": "1696919217190",
+		"user": {
+			"id": "83933a6e-0d4d-48d9-84c1-def33ea4bcc5",
+			"firstName": "karina",
+			"lastName": "doaespa",
+			"email": "karinaAespa@gmail.com",
+			"cpf": "00000000001",
+			"cellphone": "0123457890",
+			"birthdate": "2023-02-19",
+			"description": "oi eu sou a karina do aespa",
+			"userImage": null,
+			"role": "seller",
+			"created_at": "1696906355756"
+		}
+	}
+}
+
+```
+
+### Edição de comentário 
+
+`PATCH /comments/:id - FORMATO DA REQUISIÇÃO`
+```json
+{
+  "comment": "Muito bom porém editado!"
+}
+```
+`PATCH /comments/id - FORMATO DA RESPOSTA - STATUS 200`
+```json
+{
+	"id": "8d87b47d-a3a5-4684-a570-44915e95ef37",
+	"comment": "Muito bom porém editado!",
+	"created_at": "1696920086834",
+	"user": {
+		"id": "c9051b4e-c1e5-468d-b094-6085221eb49f",
+		"firstName": "giselle",
+		"lastName": "doaespa",
+		"email": "giselleAespa@gmail.com",
+		"cpf": "00000000002",
+		"cellphone": "01234578901",
+		"birthdate": "2023-02-19",
+		"description": "oi eu sou a giselle do aespa",
+		"userImage": null,
+		"role": "buyer",
+		"created_at": "1696915346061"
+	},
+	"salesAd": {
+		"id": "75e75015-228b-4a8f-9919-82c0332d77dd",
+		"brand": "toyota",
+		"model": "carro muito irado e show do aespa(elétrico)",
+		"year": "2017",
+		"mileage": 70000,
+		"engine": "hybrid",
+		"isGoodPrice": true,
+		"price": 122223000,
+		"color": "pink",
+		"description": "we them girls we them girls we them girls",
+		"status": true,
+		"created_at": "1696919217190",
+		"user": {
+			"id": "83933a6e-0d4d-48d9-84c1-def33ea4bcc5",
+			"firstName": "karina",
+			"lastName": "doaespa",
+			"email": "karinaAespa@gmail.com",
+			"cpf": "00000000001",
+			"cellphone": "0123457890",
+			"birthdate": "2023-02-19",
+			"description": "oi eu sou a karina do aespa",
+			"userImage": null,
+			"role": "seller",
+			"created_at": "1696906355756"
+		}
+	}
+}
+```
+### Deleção de comentário 
+
+`DELETE /comments/:id - FORMATO DA REQUISIÇÃO`
+
+Não é necessário nenhum corpo de request.
+
+`PATCH /comments/id - FORMATO DA RESPOSTA - STATUS 204`
+
+Sem corpo de resposta.
+
 `DELETE /salesAd/:id - FORMATO DA RESPOSTA - STATUS 204`
 
 Sem corpo de resposta.
