@@ -88,9 +88,11 @@ PATCH| /comments/salesAd/:id | Edição de comentário|
 DELETE| comments/salesAd/:id | Deleta um comentário|
 
 
-## Requests e Responses
+# Requests e Responses
 
-### /Users
+## /Users
+
+### Criar um usuário
 
 ` POST /users - FORMATO DA REQUISIÇÃO `
  
@@ -145,6 +147,7 @@ Caso dê tudo certo, a resposta será assim:
 	}
 }
 ```
+### Editar dados do usuário
 ` PATCH /users/update/:id - FORMATO DA REQUISIÇÃO `
 
 ```json
@@ -168,6 +171,7 @@ Caso dê tudo certo, a resposta será assim:
 	"created_at": "1693336326329"
 }
 ```
+### Deleção de usuário
 
 `DELETE /users/delete/:id - FORMATO DA REQUISIÇÃO`
 
@@ -178,7 +182,7 @@ Não é necessário nenhum corpo de request.
 Sem corpo de response.
 
 ## Address
-
+### Editar dados do endereço
 `PATCH /address - FORMATO DA REQUISIÇÃO`
 ```json
 {
@@ -221,6 +225,8 @@ Sem corpo de response.
 ```
 
 ## salesAd
+
+### Listar todos os anúncios
 
 `GET /salesAd - FORMATO DA REQUISIÇÃO` 
 
