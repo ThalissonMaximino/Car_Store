@@ -1,5 +1,3 @@
-# Car_Store
-
 
 # Descrição
 
@@ -96,7 +94,7 @@ DELETE| comments/salesAd/:id | Deleta um comentário|
 
 ` POST /users - FORMATO DA REQUISIÇÃO `
  
-```
+```bash
 {
 	"firstName": "Karina",
 	"lastName": "Doaespa",
