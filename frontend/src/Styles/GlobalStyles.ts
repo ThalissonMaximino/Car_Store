@@ -58,7 +58,42 @@ body,html{
 	--color-grey-scale-grey-9: #f8f9fa;
 	--color-grey-scale-grey-10: #fdfdfd;
 	--color-colors-fixed-white-fixed: #ffffff;
+	
+	--modal-background: rgba(33, 37, 41, 0.6);
 
+	--font-heading-1: 2.75rem; 
+	--font-heading-2: 2.25rem; 
+	--font-heading-3: 2rem; 
+	--font-heading-4: 1.75rem; 
+	--font-heading-5: 1.5rem; 
+	--font-heading-6: 1.25rem; 
+	--font-body-1: 1rem; 
+	--font-body-2: .875rem; 
+
+	--font-bold: 700;
+	--font-semibold: 600;
+	--font-medium: 500;
+	--font-base: 400;
+
+	--button-border: 2px;
+	--input-border: 4px;
+
+	--button-width-0: 5rem; 
+    --button-width-1: 6.25rem; 
+    --button-width-2: 6.75rem; 
+    --button-width-3: 7.875rem; 
+    --button-width-4: 12.875rem; 
+    --button-width-5: 17.438rem; 
+    --button-width-6: 100%;
+    --button-width-7: 48%;
+    --button-width-8: 80%;
+    --button-width-9: 9.375rem; 
+    --button-width-10: 10.313rem;
+
+	--button-height-1: 3rem; // 48px
+
+    --border-button-1: 1.5px solid var(--grey-1);
+	
     font-size: 60%;
 }
 
