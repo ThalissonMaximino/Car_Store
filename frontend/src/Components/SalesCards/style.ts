@@ -12,23 +12,23 @@ export const StyledProductCard=styled.div`
         width:312px;
         height:152px;
     }
-    .imagemUsuario{
+    .user_img{
         display:flex;
         img{
             width:32px;
             height:32px;
             border-radius:50%;
         }
-        .anunciante{
+        .seller{
             margin-top:4px;
             margin-left:10px;
         }
     }
-    .dadosNumericos{
+    .carDataNumbers{
         display:flex;
         justify-content:space-between;
         align-items: center;
-        .anoKM{
+        .yearKm{
             display:flex;
             align-items:center;
         }
@@ -42,7 +42,7 @@ export const StyledProductCard=styled.div`
             background:${({theme})=>theme.colors.blue100};
             color:${({theme})=>theme.colors.blue900};
         }
-        .ano{
+        .year{
             display:flex;
             flex-direction:row;
             justify-content: center;
@@ -53,7 +53,7 @@ export const StyledProductCard=styled.div`
             background:${({theme})=>theme.colors.blue100};
             color:${({theme})=>theme.colors.blue900};
         }
-        .preco{
+        .price{
             color:${({theme})=>theme.colors.gray700};
             font-family:'Lexend', sans-serif;
             font-size:16px;

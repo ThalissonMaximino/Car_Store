@@ -11,15 +11,15 @@ export const SalesCard = ()=>{
                 <StyledTitle $fontSize="three" fontColor="gray600">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem...</StyledTitle>
                 <div className="user_img">
                     <img  src="../assets/userExample.svg" alt="" />
-                    <StyledTitle className="anunciante" $fontSize="three" fontColor="gray600">Anuciante</StyledTitle>
+                    <StyledTitle className="seller" $fontSize="three" fontColor="gray600">Anuciante</StyledTitle>
                 </div>
-                <div className="dadosNumericos">
-                    <div className="anoKM">
+                <div className="carDataNumbers">
+                    <div className="yearKm">
                         <span className="km">0 KM</span>
-                        <span className="ano">2019</span>
+                        <span className="year">2019</span>
                     </div>
                     <div>
-                        <span className="preco">R$ 20.000,00</span>
+                        <span className="price">R$ 20.000,00</span>
                     </div>
                 </div>
             </StyledProductCard>
