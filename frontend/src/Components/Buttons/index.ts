@@ -31,7 +31,8 @@ const Button = styled.button<ButtonProps>`
   background-color: ${({ $background }) =>
     $background ? `var(--${$background})` : "var(--color-brand-brand-1)"};
 
-  color: ${({ $color }) => ($color ? `var(--${$color})` : "var(--color-grey-scale-grey-10)")};
+  color: ${({ $color }) =>
+    $color ? `var(--${$color})` : "var(--color-grey-scale-grey-10)"};
 
   font-size: ${({ $size }) =>
     $size ? `var(--font-body-${$size})` : "var(--font-body-1)"};
