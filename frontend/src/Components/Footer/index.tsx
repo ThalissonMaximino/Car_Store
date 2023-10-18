@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container ">
         <img src={MotorsShopLogo} alt="Motors Shop" />
         <p>© 2022 - Todos os direitos reservados.</p>
-        <a href="#top">
+        <a href="top">
           <img
             className="arrowUp"
             src={ArrowUp}
