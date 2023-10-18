@@ -44,15 +44,15 @@ export const StyledTitle = styled.div<IStyledTitleProps>`
             `;
             case 'gray':
                 return css`
-                 color:${theme.colors.gray700}
+                 color:var(--color-grey-scale-grey-7)
                 `;
             case 'gray600':
                 return css`
-                    color:${theme.colors.gray600}
+                    color:var(--color-grey-scale-grey-6)
                 `
             case 'gray550':
                 return css`
-                    color:${theme.colors.gray550}
+                    color:var(--color-grey-scale-grey-5)
                 `
         }
       }

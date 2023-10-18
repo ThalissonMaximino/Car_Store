@@ -39,8 +39,8 @@ export const StyledProductCard=styled.div`
             justify-content: center;
             height:31px;
             width:51px;
-            background:${({theme})=>theme.colors.blue100};
-            color:${({theme})=>theme.colors.blue900};
+            background:var(--color-brand-brand-4);
+            color:var(--color-brand-brand-3);
         }
         .year{
             display:flex;
@@ -50,12 +50,11 @@ export const StyledProductCard=styled.div`
             margin-left:15px;
             height:31px;
             width:51px;
-            background:${({theme})=>theme.colors.blue100};
-            color:${({theme})=>theme.colors.blue900};
+            background:var(--color-brand-brand-4);
+            color:var(--color-brand-brand-3);
         }
         .price{
-            color:${({theme})=>theme.colors.gray700};
-            font-family:'Lexend', sans-serif;
+            color:var(--color-grey-scale-grey-9);
             font-size:16px;
         }
     }
