@@ -8,7 +8,7 @@ const Header = () => {
     <StyledHeader>
       <div className="container navbar">
         <Link to={"/"}>
-          <h1 title="Retornar ao início">
+          <h1 className="text-style-heading-heading-1-700" title="Retornar ao início">
             Motors <span>shop</span>
           </h1>
         </Link>
