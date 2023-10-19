@@ -6,7 +6,7 @@ export const SalesCard = ()=>{
     return (
         <main>
             <StyledProductCard>
-                <img src="../../assets/saleCard/carPorsche.svg" alt="porsche" />
+                <img src="../../assets/saleCard/carPng.png" alt="porsche" />
                 <StyledTitle $fontSize="two">Product title stays here - max 1 line</StyledTitle>
                 <StyledTitle $fontSize="three">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem...</StyledTitle>
                 <div className="user_img">
