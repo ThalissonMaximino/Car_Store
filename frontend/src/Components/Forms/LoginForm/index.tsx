@@ -25,7 +25,7 @@ export const LoginForm = () => {
 
     return(
         <>
-        <h2>Login</h2>
+        <h1 className='text-style-heading-heading-5-500'>Login</h1>
         <form onSubmit={handleSubmit(submit)}>
           <Input
             id="email"
