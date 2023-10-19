@@ -6,6 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import Input from "../../Inputs/Input";
 import { useAuth } from "../../../Hooks/useAuth";
 import InputPass from "../../Inputs/InputPassword";
+import { StyledForm } from "./style";
 
 export const LoginForm = () => {
     const {signIn} = useAuth()
@@ -25,8 +26,8 @@ export const LoginForm = () => {
 
     return(
         <>
+        <StyledForm onSubmit={handleSubmit(submit)}>
         <h1 className='text-style-heading-heading-5-500'>Login</h1>
-        <form onSubmit={handleSubmit(submit)}>
           <Input
             id="email"
             label="Email"
@@ -49,7 +50,7 @@ export const LoginForm = () => {
             type="submit">
             Entrar
           </Button>
-          </form>
+          </StyledForm>
         </>
     );
 };

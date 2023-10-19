@@ -9,8 +9,7 @@ export const Login = () => {
 
     return (
         <>
-        {/* <Header/> */}
-       
+       <Header/>
        <LoginForm/>
        <Footer/>
        </>
