@@ -26,4 +26,8 @@ export const StyledForm = styled.form`
     color:var(--color-grey-scale-grey-2);
     font-weight: 400;
   }
+  @media (max-width: 430px) {
+    width: 100%;
+  }
+  ;
 `;
