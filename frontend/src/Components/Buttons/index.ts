@@ -16,9 +16,11 @@ interface ButtonProps {
 const Button = styled.button<ButtonProps>`
   min-height: var(--button-height-1);
   border-radius: var(--button-border);
-
+  padding: 10px;
+  
+  
   border: ${({ $border }) => ($border ? "var(--border-button-1)" : "none")};
-
+  
   width: ${({ $width }) =>
     $width ? `var(--button-width-${$width})` : "var(--button-width-1)"};
 
@@ -31,20 +33,22 @@ const Button = styled.button<ButtonProps>`
   background-color: ${({ $background }) =>
     $background ? `var(--${$background})` : "var(--color-brand-brand-1)"};
 
-  color: ${({ $color }) =>
+  color: ${({ $color }) => 
     $color ? `var(--${$color})` : "var(--color-grey-scale-grey-10)"};
 
   font-size: ${({ $size }) =>
-    $size ? `var(--font-body-${$size})` : "var(--font-body-1)"};
+    $size ? `var(--font-body-${$size})` : "var(--font-body-3)"};
 
   font-weight: ${({ $weight }) =>
-    $weight ? `var(--${$weight})` : "var(--font-semibold)"};
+    $weight ? `var(--${$weight})` : "var(--font-medium)"};
 
-  @media (min-width: 1024px) {
-    display: ${({ $display }) => ($display ? "none" : "block")};
-  }
+@media (min-width: 1024px) {
+  display: ${({ $display }) => ($display ? "none" : "block")};
+}
 
-  cursor: ${({ $disable }) => ($disable ? "none" : "pointer")};
+cursor: ${({ $disable }) => ($disable ? "none" : "pointer")};
+
+/* font-size: 16px; */
 `;
 
 export default Button;

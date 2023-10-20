@@ -8,22 +8,32 @@ export default createGlobalStyle`
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  overflow-x: hidden;
 }
-body,html{
+body{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+	background-color: var(--color-brand-brand-4);
   }
-  h1, h2, h3, h4, h5, h6, strong{
+  
+h1, h2, h3, h4, h5, h6, strong{
     font-weight: 500;
   }
 
-  body, input, button, textarea {
+  body, input, button, textarea, label {
     font-family: 'Inter';
     font-size: 1.6rem;
   }
   button {
     cursor: pointer;
   }
+ 
+#root{
+	display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
   
 :root {
 	--color-feedback-alert-1: #cd2b31;
@@ -71,6 +81,7 @@ body,html{
 	--font-heading-6: 1.25rem; 
 	--font-body-1: 1rem; 
 	--font-body-2: .875rem; 
+	--font-body-3: 1.6rem; 
 
 	--font-bold: 700;
 	--font-semibold: 600;
@@ -94,7 +105,7 @@ body,html{
 
 	--button-height-1: 3rem; // 48px
 
-    --border-button-1: 1.5px solid var(--grey-1);
+    --border-button-1: 1.5px solid var(--color-grey-scale-grey-4);
 	
     font-size: 60%;
 }
@@ -205,7 +216,6 @@ body,html{
 	text-transform: none;
 }
 .text-style-inputs-buttons-input-label {
-	font-size: 14px;
 	font-family: "Inter";
 	font-weight: 500;
 	font-style: normal;

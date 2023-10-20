@@ -10,8 +10,8 @@ const Input = forwardRef(
   ) => {
     return (
       <StyledFieldset>
-        <label htmlFor={id}> {label} </label>
-        <input id={id} {...rest} ref={ref} />
+        <label className="text-style-inputs-buttons-input-label" htmlFor={id}> {label} </label>
+        <input className="text-style-inputs-buttons-input-label" id={id} {...rest} ref={ref} />
         {errors ? <span>{errors.message}</span> : null}
       </StyledFieldset>
     );
