@@ -13,7 +13,6 @@ export default createGlobalStyle`
 body{
     width: 100vw;
     min-height: 100vh;
-	background-color: var(--color-brand-brand-4);
   }
   
 h1, h2, h3, h4, h5, h6, strong{
@@ -33,6 +32,7 @@ h1, h2, h3, h4, h5, h6, strong{
     min-height: 100vh;
     flex-direction: column;
     justify-content: space-between;
+	background-color: var(--color-brand-brand-4);
 }
   
 :root {
