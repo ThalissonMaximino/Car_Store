@@ -10,5 +10,6 @@ export const StyledFieldset = styled.fieldset`
   input {
     width: 100%;
     padding:10px;
+    border: 1px solid var(--color-grey-scale-grey-7);
   }
 `;

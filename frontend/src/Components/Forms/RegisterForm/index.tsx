@@ -5,6 +5,7 @@ import Input from "../../Inputs/Input";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Button from "../../Buttons";
 import InputPass from "../../Inputs/InputPassword";
+import StyledDiv from "./style";
 
 export const FormRegister = () => {
   const {
@@ -40,8 +41,8 @@ export const FormRegister = () => {
 
   return (
     <>
-      <div>
-        <h2>Cadastro</h2>
+      <StyledDiv>
+        <h2 className="">Cadastro</h2>
         <p>Informações pessoais</p>
         <form>
           <Input
@@ -215,7 +216,7 @@ export const FormRegister = () => {
             Finalizar cadastro
           </Button>
         </form>
-      </div>
+      </StyledDiv>
     </>
   );
 };

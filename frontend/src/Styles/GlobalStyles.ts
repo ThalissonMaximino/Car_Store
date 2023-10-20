@@ -79,8 +79,8 @@ h1, h2, h3, h4, h5, h6, strong{
 	--font-heading-4: 1.75rem; 
 	--font-heading-5: 1.5rem; 
 	--font-heading-6: 1.25rem; 
-	--font-body-1: 1rem; 
-	--font-body-2: .875rem; 
+	--font-body-1: 1.5rem; 
+	--font-body-2: 1rem; 
 	--font-body-3: 1.6rem; 
 
 	--font-bold: 700;
