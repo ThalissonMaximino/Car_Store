@@ -56,7 +56,7 @@ export const UserProvider = ({ children }: TUserProvidersProps) => {
 
   const userRegister = async (data: TUserRegisterData) => {
     try {
-      await api.post("/users", data);
+      await api.post("users/register", data);
       const token = localStorage.getItem("frontEndMotors:token");
 
       api.defaults.headers.common.Authorization = `Bearer ${token}`;
@@ -67,7 +67,7 @@ export const UserProvider = ({ children }: TUserProvidersProps) => {
     //   toast.error("Cadastro inválido!");
       console.log(error);
     } finally {
-      console.clear();
+      
     }
   };
 

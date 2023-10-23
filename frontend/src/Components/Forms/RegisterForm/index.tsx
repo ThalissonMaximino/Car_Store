@@ -6,8 +6,12 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import Button from "../../Buttons";
 import InputPass from "../../Inputs/InputPassword";
 import StyledDiv from "./style";
+import useUserContext from "../../../Hooks/useUserContext";
+import { api } from "../../../Services/api";
 
 export const FormRegister = () => {
+  const { userRegister } = useUserContext();
+
   const {
     register,
     handleSubmit,
@@ -36,7 +40,20 @@ export const FormRegister = () => {
       },
     };
 
-    // userRegister(newData);
+    userRegister(newData);
+  };
+
+  const findLocal = async (cepData: string) => {
+    try {
+      const { data } = await api.get(`${cepData}/json/`);
+
+      setValue("address.city", data.localidade);
+      setValue("address.street", data.logradouro);
+      setValue("address.state", data.uf);
+    } catch (error) {
+      console.log(error);
+      // toast.error("CEP não encontrado");
+    }
   };
 
   return (
@@ -44,7 +61,7 @@ export const FormRegister = () => {
       <StyledDiv>
         <h2 className="">Cadastro</h2>
         <p>Informações pessoais</p>
-        <form>
+        <form onSubmit={handleSubmit(submit)}>
           <Input
             id="firstName"
             label="Primeiro Nome"
@@ -114,7 +131,7 @@ export const FormRegister = () => {
             />
             <Button
               type="button"
-              //   onClick={() => findLocal(getValues("address.cep"))}
+              onClick={() => findLocal(getValues("address.cep"))}
               $background="transparent"
               $color="gray-5"
               className="button__cep"
@@ -174,7 +191,7 @@ export const FormRegister = () => {
             <div className="button buyerBtn">
               <input
                 type="radio"
-                id="a25"
+                // id="a25"
                 value="buyer"
                 {...register("role")}
               />
@@ -186,7 +203,7 @@ export const FormRegister = () => {
             <div className="button sellerBtn">
               <input
                 type="radio"
-                id="a25"
+                // id="a25"
                 value="seller"
                 {...register("role")}
               />
