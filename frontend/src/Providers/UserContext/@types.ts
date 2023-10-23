@@ -1,5 +1,7 @@
 import { ReactNode } from "react";
 import { TLoginData } from "../../Components/Forms/LoginForm/validator";
+import { TUserRegisterData } from "../../Components/Forms/RegisterForm/validator";
+import { TUserSales } from "../CarsContext/@types";
 
 
 type TUserProvidersProps = {
@@ -10,7 +12,34 @@ type TUserProvidersProps = {
 type TUserContext = {
     user: TUser | null;
     setUser: React.Dispatch<React.SetStateAction<TUser | null>>;
-    userLogin: (data: TLoginData) => void;}
+    userLogin: (data: TLoginData) => void;
+    logoutUser: () => void;
+    userRegister: (data: TUserRegisterData) => void;
+    userName: TUserName | null;
+    retrieveUser: (id: string) => Promise<void>;
+    changeUserAddress: (data: TAddressPartial) => Promise<void>;
+    retrieveProfileViewUser?: (
+      id: string,
+      setState: React.Dispatch<React.SetStateAction<TUser | null>>,
+      setState2: React.Dispatch<React.SetStateAction<TUserSales[]>>
+    ) => Promise<void>;
+    userSales: TUserSales[];
+    getUserSalesPagination: (
+      pageUrl: string,
+      setState: React.Dispatch<React.SetStateAction<TUserSales[]>>
+    ) => Promise<void>;
+    previousPage: string | null;
+    nextPage: string | null;
+    pagesAmount: number;
+    setUserSales: React.Dispatch<React.SetStateAction<TUserSales[]>>;
+    updateUserInformation: (
+      id: string,
+      data: TUpdateUserPartial
+    ) => Promise<void>;
+    deleteUserProfile: (id: string) => Promise<void>;
+    loading: boolean;
+    setLoading: React.Dispatch<React.SetStateAction<boolean>>;
+  }
 
 
 type TErrorResponse = {
