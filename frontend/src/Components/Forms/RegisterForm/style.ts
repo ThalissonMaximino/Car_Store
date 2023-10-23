@@ -22,8 +22,6 @@ const StyledDiv = styled.div`
     }
   }
 
-
-
   h2 {
     font-size: var(--font-heading-2);
     margin-top: 44px;
@@ -44,7 +42,6 @@ const StyledDiv = styled.div`
     margin-top: 12px;
     padding-left: 15px;
   }
-
 
   .btnRole,
   .address {
@@ -81,7 +78,6 @@ const StyledDiv = styled.div`
     opacity: 0.011;
     z-index: 100;
     cursor: pointer;
-   
   }
 
   .button input[type="radio"]:checked + label {
@@ -90,7 +86,6 @@ const StyledDiv = styled.div`
     border-radius: var(--button-border);
     border: none;
     cursor: pointer;
-  
   }
 
   .button label {
@@ -125,7 +120,6 @@ const StyledDiv = styled.div`
       position: absolute;
       right: 5px;
       padding-top: 10px;
-
     }
   }
 

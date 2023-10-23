@@ -5,13 +5,13 @@ import schema, { TLoginData } from "./validator";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Link } from "react-router-dom";
 import Input from "../../Inputs/Input";
-import { useAuth } from "../../../Hooks/useAuth";
 import InputPass from "../../Inputs/InputPassword";
 import { StyledForm } from "./style";
+import { UserContext } from "../../../Providers/UserContext";
 
 export const LoginForm = () => {
-  const { signIn } = useAuth();
-  // const { userLogin } = useContext(UserContext);
+  
+  const { userLogin } = useContext(UserContext);
 
   const {
     register,
@@ -22,7 +22,7 @@ export const LoginForm = () => {
   });
 
   const submit: SubmitHandler<TLoginData> = async (data) => {
-    signIn(data);
+    userLogin(data);
   };
 
   return (

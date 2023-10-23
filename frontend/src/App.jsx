@@ -1,4 +1,5 @@
-import { AuthProvider } from "./Providers/AuthContext/AuthProvider"
+
+import { UserProvider } from "./Providers/UserContext"
 import GlobalStyles from "./Styles/GlobalStyles"
 import { RoutesMain } from "./routes"
 
@@ -8,9 +9,11 @@ function App() {
   return (
     <>
      <GlobalStyles/>
-     <AuthProvider> 
+      <UserProvider>
      <RoutesMain/>
-     </AuthProvider>
+     </UserProvider>
+    
+     
     </>
   )
 }
