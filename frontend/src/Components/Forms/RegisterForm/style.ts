@@ -22,6 +22,8 @@ const StyledDiv = styled.div`
     }
   }
 
+
+
   h2 {
     font-size: var(--font-heading-2);
     margin-top: 44px;
@@ -42,6 +44,7 @@ const StyledDiv = styled.div`
     margin-top: 12px;
     padding-left: 15px;
   }
+
 
   .btnRole,
   .address {
@@ -78,14 +81,16 @@ const StyledDiv = styled.div`
     opacity: 0.011;
     z-index: 100;
     cursor: pointer;
+   
   }
 
   .button input[type="radio"]:checked + label {
-    color: var(--grey-10);
-    background-color: var(--brand-1);
+    color: var(--color-grey-scale-grey-10);
+    background-color: var(--color-brand-brand-1);
     border-radius: var(--button-border);
     border: none;
     cursor: pointer;
+  
   }
 
   .button label {
@@ -93,8 +98,8 @@ const StyledDiv = styled.div`
     z-index: 90;
     line-height: 1.8em;
     cursor: pointer;
-    color: var(--grey-1);
-    border: 2px solid var(--grey-3);
+    color: var(--color-grey-scale-grey-1);
+    border: 2px solid var(--color-grey-scale-grey-3);
     border-radius: var(--button-border);
   }
 

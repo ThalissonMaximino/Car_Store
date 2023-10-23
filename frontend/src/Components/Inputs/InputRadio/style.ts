@@ -26,6 +26,7 @@ const StyledInputRadio = styled.fieldset`
     cursor: pointer;
   }
 
+
   input[type="radio"]:checked + label {
     color: var(--color-grey-scale-grey-10);
     background-color: var(--color-brand-brand-1);
@@ -33,6 +34,7 @@ const StyledInputRadio = styled.fieldset`
     border: none;
     cursor: pointer;
   }
+
 
   label {
     cursor: pointer;

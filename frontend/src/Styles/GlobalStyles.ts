@@ -8,7 +8,7 @@ export default createGlobalStyle`
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 body{
     width: 100vw;
@@ -33,6 +33,7 @@ h1, h2, h3, h4, h5, h6, strong{
     flex-direction: column;
     justify-content: space-between;
 	background-color: var(--color-brand-brand-4);
+	overflow-x: hidden;
 }
   
 :root {
