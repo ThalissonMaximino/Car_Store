@@ -27,8 +27,8 @@ const StyledInputRadio = styled.fieldset`
   }
 
   input[type="radio"]:checked + label {
-    color: var(--grey-10);
-    background-color: var(--brand-1);
+    color: var(--color-grey-scale-grey-10);
+    background-color: var(--color-brand-brand-1);
     border-radius: var(--button-border);
     border: none;
     cursor: pointer;
@@ -40,7 +40,7 @@ const StyledInputRadio = styled.fieldset`
     line-height: 1.8em;
     cursor: pointer;
     color: var(--grey-1);
-    border: 2px solid var(--grey-3);
+    border: 2px solid var(--color-grey-scale-grey-3);
     border-radius: var(--button-border);
   }
 `;
