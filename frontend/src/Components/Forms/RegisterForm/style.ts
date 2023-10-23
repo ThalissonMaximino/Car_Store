@@ -14,7 +14,7 @@ const StyledDiv = styled.div`
 
     span {
       font-size: var(--font-body-2);
-      color: var(--grey-2);
+      color: var(--color-grey-scale-grey-2);
     }
 
     button {

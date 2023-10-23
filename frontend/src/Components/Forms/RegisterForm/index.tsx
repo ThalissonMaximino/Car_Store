@@ -212,7 +212,7 @@ export const FormRegister = () => {
             errors={errors.confirmPass}
           />
 
-          <Button $background="brand-2" $width={6} type="submit">
+          <Button $background="color-brand-brand-2" $width={6} type="submit">
             Finalizar cadastro
           </Button>
         </form>
