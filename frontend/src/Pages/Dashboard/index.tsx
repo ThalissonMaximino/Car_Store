@@ -2,16 +2,21 @@ import React from 'react'
 import Header from "../../Components/Header"
 import { SalesCard } from '../../Components/SalesCards'
 import UserAvatar from '../../Components/UserAvatar'
+import { useUserContext, useModal, useCarContext } from "../../Hooks";
 
 export const Dashboard = () => {
     
-// const {setModal, modal} = useModal()    
-    
+  const { setModal, modal } = useModal();
+
+  const { user, retrieveUser, userSales, setUserSales, loading } =
+  useUserContext();
+  
+  const { change } = useCarContext();
     
     return (
-        <>  
+      <>  
        <Header/>
-       {/* <div className="dashboard-container">
+       <div className="dashboard-container">
               <div className="dashboard-header-purple"></div>
               <div className="user-info-container">
                 <UserAvatar
@@ -36,8 +41,8 @@ export const Dashboard = () => {
                     </button>
                   </div>
                 ) : null}
-              </div> */}
-       <SalesCard/>
-        </>
+              </div>
+    </div>
+     </>
     )
 }
