@@ -12,6 +12,9 @@ import NoCars from "../../Components/MessageNoCars";
 // import { Modal } from "@mui/material";
 import UserSalePagination from "../../Components/SalesPagination";
 import { createPortal } from "react-dom";
+import CreateAdForm from "../../Components/Forms/CreateAdForm";
+import EditAdForm from "../../Components/Forms/EditAdForm";
+import DeleteAdModal from "../../Components/Forms/DeleteAdForm";
 
 export const Dashboard = () => {
   const { setModal, modal } = useModal();
@@ -23,37 +26,37 @@ export const Dashboard = () => {
 
   return (
     <>
-      <div>
-        <Header />
-        <div className="dashboard-container">
-          <div className="dashboard-header-purple"></div>
-          <div className="user-info-container">
-            <UserAvatar
-              img={user?.userImage}
-              username={`${user?.firstName} ${user?.lastName}`}
-              size="big"
-            />
-            <div className="user-name-container">
-              <h2 className="user-name">{`${user?.firstName} ${user?.lastName}`}</h2>
-              <span className="user-role">
-                {user?.role == "seller" ? "Anunciante" : "Comprador"}
-              </span>
-            </div>
-            <p className="user-description">{user?.description}</p>
+       <StyledDashboardPage>
+            <Header />
 
-            {user?.role == "seller" ? (
-              <div className="seller-button-container">
-                <button
-                  className="seller-button"
-                  onClick={() => setModal("Criar anúncio")}
-                >
-                  Criar Anúncio
-                </button>
+            <div className="dashboard-container">
+              <div className="dashboard-header-purple"></div>
+              <div className="user-info-container">
+                <UserAvatar
+                  img={user?.userImage}
+                  username={`${user?.firstName} ${user?.lastName}`}
+                  size="big"
+                />
+                <div className="user-name-container">
+                  <h2 className="user-name">{`${user?.firstName} ${user?.lastName}`}</h2>
+                  <span className="user-role">
+                    {user?.role == "seller" ? "Anunciante" : "Comprador"}
+                  </span>
+                </div>
+                <p className="user-description">{user?.description}</p>
+
+                {user?.role == "seller" ? (
+                  <div className="seller-button-container">
+                    <button
+                      className="seller-button"
+                      onClick={() => setModal("Criar anúncio")}>
+                      Criar Anúncio
+                    </button>
+                  </div>
+                ) : null}
               </div>
-            ) : null}
-          </div>
-        </div>
-        {userSales.length === 0 ? (
+
+              {userSales.length === 0 ? (
                 <NoCars />
               ) : (
                 <div className="sales-container">
@@ -93,8 +96,9 @@ export const Dashboard = () => {
               : null}
 
             <Footer />
-        
-      </StyledDashboardPage>
+          </StyledDashboardPage>
     </>
   );
 };
+
+export default Dashboard
