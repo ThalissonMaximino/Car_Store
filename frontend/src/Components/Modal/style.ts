@@ -33,7 +33,7 @@ export const StyledModal = styled.div`
     padding: 15px;
     gap: 10px;
     border-radius: 8px;
-    background: var(--white);
+    background: var(--color-colors-fixed-white-fixed);
   }
 
   .modal-header {
