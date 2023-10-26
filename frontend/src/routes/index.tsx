@@ -5,7 +5,7 @@ import { Dashboard } from "../Pages/Dashboard"
 import { Register } from "../Pages/Register"
 
 
-export const RoutesMain = () => {
+ const RoutesMain = () => {
 
     return(
         <Routes>
@@ -15,3 +15,5 @@ export const RoutesMain = () => {
         </Routes>
     )
 }
+
+export default RoutesMain;
