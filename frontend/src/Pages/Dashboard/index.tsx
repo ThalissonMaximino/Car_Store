@@ -1,10 +1,11 @@
 import React from "react";
 import Header from "../../Components/Header";
-import { SalesCard } from "../../Components/SalesList";
+import SalesList, { SalesCard } from "../../Components/SalesList";
 import UserAvatar from "../../Components/UserAvatar";
 import { useUserContext, useModal, useCarContext } from "../../Hooks";
 import { StyledDashboardPage } from "./style";
 import NoCars from "../../Components/MessageNoCars";
+import { Modal } from "@mui/material";
 
 export const Dashboard = () => {
   const { setModal, modal } = useModal();
