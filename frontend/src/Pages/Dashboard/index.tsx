@@ -45,6 +45,47 @@ export const Dashboard = () => {
             ) : null}
           </div>
         </div>
+        {userSales.length === 0 ? (
+                <NoCars />
+              ) : (
+                <div className="sales-container">
+                  <h2>Anúncios</h2>
+                  <div className="sales-list-container">
+                    <SalesList owner={user?.role!} sales={userSales} />
+                  </div>
+
+                  <UserSalePagination setState={setUserSales} />
+                </div>
+              )}
+            </div>
+            {modal === "Criar anúncio"
+              ? createPortal(
+                  <Modal title={"Criar anúncio"}>
+                    <CreateAdForm />
+                  </Modal>,
+                  document.body
+                )
+              : null}
+
+            {modal === "Editar anúncio"
+              ? createPortal(
+                  <Modal title={"Editar anúncio"}>
+                    <EditAdForm />
+                  </Modal>,
+                  document.body
+                )
+              : null}
+            {modal === "Excluir anúncio"
+              ? createPortal(
+                  <Modal title={"Excluir anúncio"}>
+                    <DeleteAdModal />
+                  </Modal>,
+                  document.body
+                )
+              : null}
+
+            <Footer />
+        
       </StyledDashboardPage>
     </>
   );
