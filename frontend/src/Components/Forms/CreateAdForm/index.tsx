@@ -192,8 +192,8 @@ const CreateAd = () => {
         {fields.length < 3 && (
           <Button
             type="button"
-            $background="brand-4"
-            $color="brand-1"
+            $background="color-brand-brand-4"
+            $color="color-brand-brand-1"
             $width={8}
             onClick={() => append({ url: "" })}
           >
@@ -221,8 +221,8 @@ const CreateAd = () => {
 
         <StyledInputContainer>
           <Button
-            $background="grey-5"
-            $color="grey-2"
+            $background="color-grey-scale-grey-5"
+            $color="color-grey-scale-grey-2"
             $width={7}
             onClick={closeModal}
           >
@@ -230,8 +230,8 @@ const CreateAd = () => {
           </Button>
           <Button
             type="submit"
-            $background="brand-1"
-            $color="grey-9"
+            $background="color-brand-brand-1"
+            $color="color-grey-scale-grey-9"
             $width={7}
           >
             Salvar alterações

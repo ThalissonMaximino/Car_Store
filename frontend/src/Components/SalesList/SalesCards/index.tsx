@@ -82,7 +82,7 @@ const SalesCard = ({ sale, owner }: TSaleCardProps) => {
           {status ? (
             <LinkStyle
               className="details-sale-button"
-              $color="grey-0"
+              $color="color-grey-scale-grey-0"
               $width={3}
               to={`/sale/${id}`}>
               Ver Detalhes

@@ -34,7 +34,7 @@ const ChangePage = () => {
           {previousPage && (
             <Button
               $background="transparent"
-              $color="brand-1"
+              $color="color-brand-brand-1"
               onClick={() => getCarsPagination(previousPage)}>
               <MdKeyboardArrowLeft />
               Anterior
@@ -50,7 +50,7 @@ const ChangePage = () => {
             <Button
               $background="transparent"
               onClick={() => getCarsPagination(nextPage)}
-              $color="brand-1">
+              $color="color-brand-brand-1">
               Seguinte
               <MdNavigateNext />
             </Button>
@@ -61,7 +61,7 @@ const ChangePage = () => {
           {previousPage && (
             <Button
               $background="transparent"
-              $color="brand-1"
+              $color="color-brand-brand-1"
               onClick={() => filterCars(previousPage)}>
               <MdKeyboardArrowLeft />
               Anterior
@@ -77,7 +77,7 @@ const ChangePage = () => {
             <Button
               $background="transparent"
               onClick={() => filterCars(nextPage)}
-              $color="brand-1">
+              $color="color-brand-brand-1">
               Seguinte
               <MdNavigateNext />
             </Button>

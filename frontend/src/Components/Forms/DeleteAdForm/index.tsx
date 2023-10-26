@@ -18,8 +18,8 @@ const DeleteAdModal = () => {
       <p>Essa ação não pode ser desfeita.</p>
       <div>
         <Button
-          $background="grey-5"
-          $color="grey-2"
+          $background="color-grey-scale-grey-5"
+          $color="color-grey-scale-grey-2"
           type="button"
           $width={9}
           $maxWidth={10}
@@ -27,8 +27,8 @@ const DeleteAdModal = () => {
           Cancelar
         </Button>
         <Button
-          $background="alert-2"
-          $color="alert-1"
+          $background="color-feedback-alert-2"
+          $color="color-feedback-alert-1"
           type="submit"
           $width={4}
           onClick={deleteAd}>

@@ -7,11 +7,11 @@ const StyledDeleteAd = styled.div`
   gap: 1.5rem;
   h2 {
     font-size: var(--font-heading-6);
-    color: var(--grey-1);
+    color: var(--color-grey-scale-grey-1);
   }
 
   p {
-    color: var(--grey-2);
+    color: var(--color-grey-scale-grey-2);
     margin-bottom: 1rem;
   }
 

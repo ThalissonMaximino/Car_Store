@@ -9,5 +9,5 @@ export { default as Button } from "./Buttons";
 // export { default as Banner } from "./Banner";
 export { default as ChangePage } from "./ChangePage";
 export { default as Modal } from "./Modal";
-// export { default as CreateAdForm } from "./Forms/CreateAdForm";
+export { default as CreateAdForm } from "./Forms/CreateAdForm";
 // export { default as SalesComments } from "./SaleComments";

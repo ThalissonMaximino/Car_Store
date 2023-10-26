@@ -50,8 +50,8 @@ export const StyledSalesCard = styled.li<StyledSalesCardProps>`
     top: 0;
     right: 0;
     border-radius: 4px;
-    color: var(--white);
-    background-color: var(--sucess-1);
+    color: var(--color-colors-fixed-white-fixed);
+    background-color: var(--color-feedback-sucess-1);
     font-weight: var(--font-base);
     cursor: context-menu;
     z-index: 2;
@@ -68,7 +68,7 @@ export const StyledSalesCard = styled.li<StyledSalesCardProps>`
     display: -webkit-box;
     font-size: var(--font-body-1);
     font-weight: var(--font-semibold);
-    color: var(--grey-1);
+    color: var(--color-grey-scale-grey-1);
     line-height: 171%;
     text-overflow: ellipsis;
     -webkit-line-clamp: 1;
@@ -81,7 +81,7 @@ export const StyledSalesCard = styled.li<StyledSalesCardProps>`
     font-size: var(--font-body-2);
     font-weight: var(--font-base);
     line-height: 171%;
-    color: var(--grey-2);
+    color: var(--color-grey-scale-grey-2);
     text-overflow: ellipsis;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
@@ -110,7 +110,7 @@ export const StyledSalesCard = styled.li<StyledSalesCardProps>`
     font-size: var(--font-body-1);
     font-weight: var(--font-medium);
     line-height: 171%;
-    color: var(--grey-2);
+    color: var(--color-grey-scale-grey-2);
   }
 
   .car-info-container {
@@ -130,14 +130,14 @@ export const StyledSalesCard = styled.li<StyledSalesCardProps>`
     font-size: var(--font-body-2);
     font-weight: var(--font-medium);
     line-height: 171%;
-    color: var(--brand-1);
-    background-color: var(--brand-4);
+    color: var(--color-brand-brand-1);
+    background-color: var(--color-brand-brand-4);
     border: transparent;
     border-radius: 4px;
   }
 
   .car-price {
-    color: var(--grey-1);
+    color: var(--color-grey-scale-grey-1);
     font-size: var(--font-body-1);
     font-weight: var(--font-medium);
   }
@@ -154,14 +154,14 @@ export const StyledSalesCard = styled.li<StyledSalesCardProps>`
     background-color: transparent;
     font-weight: var(--font-bold);
     font-size: var(--font-body-1);
-    border: 2px solid var(--grey-0);
+    border: 2px solid var(--color-grey-scale-grey-0);
     border-radius: 5px;
     transition: all 0.5s;
   }
 
   .sales-buttons-container > a:hover,
   .sales-buttons-container > button:hover {
-    background-color: var(--grey-0);
-    color: var(--white);
+    background-color: var(--color-grey-scale-grey-0);
+    color: var(--color-colors-fixed-white-fixed);
   }
 `;

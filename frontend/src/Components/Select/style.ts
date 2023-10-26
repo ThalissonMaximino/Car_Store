@@ -9,7 +9,7 @@ const StyledSelect = styled.fieldset`
 
   label {
     font-size: var(--font-body-2);
-    color: var(--grey-0);
+    color: var(--color-grey-scale-grey-0);
     font-weight: var(--font-medium);
   }
 
@@ -17,9 +17,9 @@ const StyledSelect = styled.fieldset`
     height: 48px;
     max-width: 100%;
     box-sizing: border-box;
-    border: 1.5px solid var(--grey-5);
+    border: 1.5px solid var(--color-grey-scale-grey-5);
     border-radius: var(--input-border);
-    color: var(--grey-3);
+    color: var(--color-grey-scale-grey-3);
     font-size: var(--font-body-1);
     outline: none;
     cursor: pointer;

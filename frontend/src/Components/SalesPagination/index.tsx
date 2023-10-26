@@ -26,7 +26,7 @@ const UserSalePagination = ({ setState }: TUserSalePaginationProps) => {
       {previousPage && (
         <Button
           $background="transparent"
-          $color="brand-1"
+          $color="color-brand-brand-1"
           onClick={() => getUserSalesPagination(previousPage, setState)}
         >
           <MdKeyboardArrowLeft />
@@ -43,7 +43,7 @@ const UserSalePagination = ({ setState }: TUserSalePaginationProps) => {
         <Button
           $background="transparent"
           onClick={() => getUserSalesPagination(nextPage, setState)}
-          $color="brand-1"
+          $color="color-brand-brand-1"
         >
           Seguinte
           <MdNavigateNext />

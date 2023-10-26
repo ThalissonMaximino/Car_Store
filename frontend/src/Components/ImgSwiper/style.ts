@@ -6,7 +6,7 @@ import "swiper/css/navigation";
 export const StyledSwiper = styled(Swiper)`
   width: ${({ width }) => (width ? `${width}rem` : "18rem")};
   height: ${({ height }) => (height ? `${height}rem` : "9.5rem")};
-  background-color: var(--grey-7);
+  background-color: var(--color-grey-scale-grey-7);
   position: relative;
 
   .car-img {
@@ -17,7 +17,7 @@ export const StyledSwiper = styled(Swiper)`
   .swiper-button-next,
   .swiper-button-prev {
     visibility: hidden;
-    color: var(--brand-1);
+    color: var(--color-brand-brand-1);
   }
 
   .swiper-button-next:after,

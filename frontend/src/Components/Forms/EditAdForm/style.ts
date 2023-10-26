@@ -7,7 +7,7 @@ const StyledInputRadioContainer = styled.div`
 
 const StyledStatusTitle = styled.h3`
   font-size: var(--font-body-2);
-  color: var(--grey-0);
+  color: var(--color-grey-scale-grey-0);
   font-weight: var(--font-medium);
 `;
 

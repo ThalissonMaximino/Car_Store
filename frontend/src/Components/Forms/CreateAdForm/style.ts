@@ -10,7 +10,7 @@ const StyledCreateAd = styled.div`
 
   h2 {
     font-size: var(--font-body-1);
-    color: var(--grey-0);
+    color: var(--color-grey-scale-grey-0);
     font-weight: var(--font-semibold);
   }
 
@@ -27,7 +27,7 @@ const StyledCreateAd = styled.div`
 
       label {
         font-size: var(--font-body-2);
-        color: var(--grey-0);
+        color: var(--color-grey-scale-grey-0);
         font-weight: var(--font-medium);
       }
 
@@ -35,9 +35,9 @@ const StyledCreateAd = styled.div`
         height: 48px;
         padding-inline: 0.6rem;
         box-sizing: border-box;
-        border: 1.5px solid var(--grey-5);
+        border: 1.5px solid var(--color-grey-scale-grey-5);
         border-radius: var(--input-border);
-        color: var(--grey-3);
+        color: var(--color-grey-scale-grey-3);
         font-size: var(--font-body-1);
         outline: none;
       }
@@ -46,9 +46,9 @@ const StyledCreateAd = styled.div`
         height: 48px;
         padding-inline: 0.6rem;
         box-sizing: border-box;
-        border: 1.5px solid var(--grey-5);
+        border: 1.5px solid var(--color-grey-scale-grey-5);
         border-radius: var(--input-border);
-        color: var(--grey-3);
+        color: var(--color-grey-scale-grey-3);
         font-size: var(--font-body-1);
         outline: none;
       }
@@ -85,12 +85,12 @@ const StyledDinamicInput = styled.div`
     border: none;
 
     svg {
-      fill: var(--brand-3);
+      fill: var(--color-brand-brand-3);
       width: 1.5rem;
       height: 1.5rem;
 
       :hover {
-        fill: var(--brand-1);
+        fill: var(--color-brand-brand-1);
       }
     }
   }
