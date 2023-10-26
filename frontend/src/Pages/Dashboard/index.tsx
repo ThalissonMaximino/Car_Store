@@ -1,11 +1,17 @@
 import React from "react";
-import Header from "../../Components/Header";
-import SalesList, { SalesCard } from "../../Components/SalesList";
-import UserAvatar from "../../Components/UserAvatar";
+import {
+  Modal,
+  Header,
+  Footer,
+  UserAvatar,
+} from "../../Components";
+import SalesList from "../../Components/SalesList";
 import { useUserContext, useModal, useCarContext } from "../../Hooks";
 import { StyledDashboardPage } from "./style";
 import NoCars from "../../Components/MessageNoCars";
-import { Modal } from "@mui/material";
+// import { Modal } from "@mui/material";
+import UserSalePagination from "../../Components/SalesPagination";
+import { createPortal } from "react-dom";
 
 export const Dashboard = () => {
   const { setModal, modal } = useModal();
@@ -17,7 +23,7 @@ export const Dashboard = () => {
 
   return (
     <>
-      <StyledDashboardPage>
+      <div>
         <Header />
         <div className="dashboard-container">
           <div className="dashboard-header-purple"></div>
