@@ -4,6 +4,8 @@ import { Login } from "../Pages/Login"
 import { Dashboard } from "../Pages/Dashboard"
 import { Register } from "../Pages/Register"
 import Home from '../Pages/Home'
+import ProtectedRoute from '../Pages/ProtectedRoutes'
+import ProfileViewUser from '../Pages/ProfileViewUser'
 
 
  const RoutesMain = () => {
@@ -13,7 +15,10 @@ import Home from '../Pages/Home'
             <Route path="/" element={<Home/>}/>
             <Route path="/register" element={<Register/>}/>
             <Route path="/login" element={<Login/>}/>
-            <Route path="/dashboard" element={<Dashboard/>}/>
+            <Route path="/dashboard" element={<ProtectedRoute />}>
+                <Route index element={<Dashboard />} />
+            </Route>
+            <Route path="/ProfileViewUser/:id" element={<ProfileViewUser />} />
         </Routes>
     )
 }

@@ -33,7 +33,7 @@ export const UserProvider = ({ children }: TUserProvidersProps) => {
 
   const userLogin = async (data: TLoginData) => {
     try {
-      const response = await api.post("/users/login", data);
+      const response = await api.post("users/login", data);
       const { token } = response.data;
 
       const tokenDecoded: TJwtDecode = jwt_decode(token);
@@ -62,7 +62,7 @@ export const UserProvider = ({ children }: TUserProvidersProps) => {
       api.defaults.headers.common.Authorization = `Bearer ${token}`;
 
     //   toast.success("Usuário cadastrado com sucesso!");
-      navigate("dashboard");
+      navigate("/dashboard");
     } catch (error) {
     //   toast.error("Cadastro inválido!");
       console.log(error);
@@ -74,7 +74,7 @@ export const UserProvider = ({ children }: TUserProvidersProps) => {
   const retrieveUser = async (id: string) => {
     setLoading(true);
     try {
-      const response = await api.get(`/salesAd/users/${id}`);
+      const response = await api.get(`salesAd/users/${id}`);
       setUserName({
         firstName: response.data.user.firstName,
         lastName: response.data.user.lastName,
@@ -95,7 +95,7 @@ export const UserProvider = ({ children }: TUserProvidersProps) => {
       console.log(error);
     } finally {
       setLoading(false);
-      console.clear();
+
     }
   };
 

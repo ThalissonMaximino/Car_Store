@@ -1,22 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Modal, Header, Footer, UserAvatar } from "../../Components";
 import SalesList from "../../Components/SalesList";
 import { useUserContext, useModal, useCarContext } from "../../Hooks";
 import { StyledDashboardPage } from "./style";
+import jwt_decode from "jwt-decode";
 import NoCars from "../../Components/MessageNoCars";
 import UserSalePagination from "../../Components/SalesPagination";
 import { createPortal } from "react-dom";
 import CreateAdForm from "../../Components/Forms/CreateAdForm";
 import EditAdForm from "../../Components/Forms/EditAdForm";
 import DeleteAdModal from "../../Components/Forms/DeleteAdForm";
+import { TJwtDecode } from "../../Providers/UserContext/@types";
 
 export const Dashboard = () => {
+
   const { setModal, modal } = useModal();
 
-  const { user, retrieveUser, userSales, setUserSales, loading } =
+  const { user, retrieveUser, userSales, setUserSales} =
     useUserContext();
 
   const { change } = useCarContext();
+
+  useEffect(() => {
+    const token = localStorage.getItem("frontEndMotors:token");
+
+    if (token) {
+      const tokenDecoded: TJwtDecode = jwt_decode(token);
+
+      retrieveUser(tokenDecoded.userId);
+    }
+  }, [change]);
 
   return (
     <>
@@ -97,3 +110,5 @@ export const Dashboard = () => {
 };
 
 export default Dashboard;
+
+
