@@ -42,13 +42,13 @@ const ProfileSettings = ({ open, setOpen, menuRef }: TMenuProps) => {
         </section>
         <Button
           $background="transparent"
-          $color="1"
+          $color="color-colors-fixed-white-fixed"
           onClick={() => setModal("Editar perfil")}>
           Editar perfil
         </Button>
         <Button
           $background="transparent"
-          $color="1"
+          $color="color-colors-fixed-white-fixed"
           onClick={() => setModal("Editar endereço")}>
           Editar endereço
         </Button>
@@ -57,7 +57,7 @@ const ProfileSettings = ({ open, setOpen, menuRef }: TMenuProps) => {
           location.pathname !== "/dashboard" && (
             <Button
               $background="transparent"
-              $color="1"
+              $color="color-colors-fixed-white-fixed"
               onClick={() => navigate("/dashboard")}>
               Meus anúncios
             </Button>
@@ -65,7 +65,7 @@ const ProfileSettings = ({ open, setOpen, menuRef }: TMenuProps) => {
 
         <Button
           $border
-          $color="1"
+          $color="color-colors-fixed-white-fixed"
           $background="transparent"
           className="logout"
           onClick={() => logoutUser()}>

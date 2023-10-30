@@ -10,7 +10,7 @@ type TUserAvatarProps = {
 const UserAvatar = ({ img, username, size }: TUserAvatarProps) => {
   const stringToColor = (string: string) => {
     let hash = 0;
-    let i;
+    let i: any;
 
     for (i = 0; i < string.length; i += 1) {
       hash = string.charCodeAt(i) + ((hash << 5) - hash);
