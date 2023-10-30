@@ -139,7 +139,7 @@ export const StyledSalesCard = styled.li<StyledSalesCardProps>`
   .car-price {
     color: var(--color-grey-scale-grey-1);
     font-size: var(--font-body-1);
-    font-weight: var(--font-medium);
+    font-weight: var(--font-bold);
   }
 
   .sales-buttons-container {
@@ -157,6 +157,8 @@ export const StyledSalesCard = styled.li<StyledSalesCardProps>`
     border: 2px solid var(--color-grey-scale-grey-0);
     border-radius: 5px;
     transition: all 0.5s;
+    text-align: center;
+    min-width: fit-content;
   }
 
   .sales-buttons-container > a:hover,

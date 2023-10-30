@@ -4,6 +4,7 @@ import { GlobalStyles } from "./Styles/GlobalStyles";
 import RoutesMain from "./routes";
 import { Modal } from "./Components";
 import { createPortal } from "react-dom";
+import { ToastContainer } from "react-toastify";
 import EditOrDeleteProfileForm from "./Components/Forms/EditDeleteProfileForm";
 import EditAddressForm from "./Components/Forms/EditAddressForm";
 import DeleteProfileModal from "./Components/Forms/DeleteProfile";
@@ -15,6 +16,14 @@ function App() {
   const { modal } = useModal();
   return (
     <>
+    {/* <ToastContainer
+        position="top-left"
+        autoClose={4000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+      /> */}
       <GlobalStyles />
       <RoutesMain />
 

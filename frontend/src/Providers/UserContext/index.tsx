@@ -18,6 +18,7 @@ import { TLoginData } from "../../Components/Forms/LoginForm/validator";
 import jwt_decode from "jwt-decode";
 import { TUserSales } from "../CarsContext/@types";
 import { TUserRegisterData } from "../../Components/Forms/RegisterForm/validator";
+import { toast } from "react-toastify";
 
 export const UserContext = createContext({} as TUserContext);
 
@@ -41,13 +42,13 @@ export const UserProvider = ({ children }: TUserProvidersProps) => {
       api.defaults.headers.common.Authorization = `Bearer ${token}`;
 
       localStorage.setItem("frontEndMotors:token", token);
-      //   toast.success("Login realizado com sucesso!");
+        toast.success("Login realizado com sucesso!");
 
       retrieveUser(tokenDecoded.userId);
 
       tokenDecoded.role === "seller" ? navigate("/dashboard") : navigate("/");
     } catch (error) {
-      //   toast.error("E-mail ou senha inválido(s)!");
+        toast.error("E-mail ou senha inválido(s)!");
       console.log(error);
     } finally {
       console.clear();

@@ -79,6 +79,7 @@ const SaleComments = () => {
           ) : (
             <Button
               className="post-button"
+              $width={4}
               onClick={() => navigate("/register")}
               type="button">
               Comentar

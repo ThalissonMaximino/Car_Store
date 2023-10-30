@@ -28,7 +28,7 @@ const Modal = ({ children, title }: TModalProps) => {
           <div className="modal-header">
             <h2>{title}</h2>
             <button
-              className="modal-close-button"
+              className="modal-close_btn"
               onClick={() => closeModal()}
               title="Fechar janela"
               ref={buttonRef}>

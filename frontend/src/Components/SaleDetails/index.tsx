@@ -16,10 +16,10 @@ const DetailsProduct = ({ saleFounded }: TSaleContainerProps) => {
     <>
       <StyledDivContainer>
         <div>
-          <section className="boxImgCar">
+          <section className="Box-Car_Img">
             <SaleContainer saleFounded={saleFounded} />
           </section>
-          <section className="boxInfoCar">
+          <section className="Box-Car_Info">
             <div className="infoCar">
               <h2>
                 {convertStr(saleFounded.brand)} {convertStr(saleFounded.model)}
@@ -68,7 +68,7 @@ const DetailsProduct = ({ saleFounded }: TSaleContainerProps) => {
               ) : null}
             </div>
 
-            <div className="descriptonCar">
+            <div className="Car-Description">
               <h2>Descrição</h2>
               <p> {saleFounded.description} </p>
             </div>

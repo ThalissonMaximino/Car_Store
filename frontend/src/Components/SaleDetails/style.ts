@@ -24,7 +24,7 @@ const StyledDivContainer = styled.div`
   }
 
   > div {
-    .boxImgCar {
+    .Box-Car_Img{
       height: 355px;
       border-radius: var(--input-border);
       background-color: var(--color-grey-scale-grey-10);
@@ -38,7 +38,7 @@ const StyledDivContainer = styled.div`
       }
     }
 
-    .boxInfoCar {
+    .Box-Car_Info {
       display: flex;
       flex-direction: column;
       gap: 16px;
@@ -86,7 +86,7 @@ const StyledDivContainer = styled.div`
         }
       }
 
-      .descriptonCar {
+      .Car-Description {
         height: auto;
         padding: 28px;
         border-radius: var(--input-border);
@@ -149,11 +149,11 @@ const StyledDivContainer = styled.div`
     flex-direction: row;
 
     > div {
-      .boxImgCar {
+      .Box-Car_Img{
         width: 752px;
       }
 
-      .boxInfoCar {
+      .Box-Car_Info {
         width: 752px;
         .infoCar {
           padding-left: 44px;
@@ -165,7 +165,7 @@ const StyledDivContainer = styled.div`
           }
         }
 
-        .descriptonCar {
+        .Car-Description {
           padding-left: 44px;
           padding-right: 44px;
           height: 300px;

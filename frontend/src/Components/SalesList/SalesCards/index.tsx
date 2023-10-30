@@ -64,7 +64,7 @@ const SalesCard = ({ sale, owner }: TSaleCardProps) => {
         ) : null}
         <div className="car-info-container">
           <div className="car-info">
-            <span>{mileage} KM</span>
+            <span>{mileage}KM</span>
             <span>{year}</span>
           </div>
           <span className="car-price">

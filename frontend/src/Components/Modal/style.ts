@@ -42,14 +42,14 @@ export const StyledModal = styled.div`
     align-items: center;
   }
 
-  .modal-close-button {
+  .modal-close_btn {
     background-color: transparent;
     border: transparent;
     color: var(--color-grey-scale-grey-4);
     cursor: pointer;
   }
 
-  .modal-close-button:hover {
+  .modal-close_btn:hover {
     color: var(--color-grey-scale-grey-0);
   }
 `;
