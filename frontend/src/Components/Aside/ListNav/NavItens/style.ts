@@ -11,11 +11,11 @@ const StyledNavItem = styled.li`
   }
 
   .pFalse {
-    color: var(--grey-3);
+    color: var(--color-grey-scale-grey-3);
   }
 
   .pTrue {
-    color: var(--brand-2);
+    color: var(--color-brand-brand-2);
   }
 `;
 

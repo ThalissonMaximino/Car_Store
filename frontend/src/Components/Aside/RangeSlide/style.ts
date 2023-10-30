@@ -6,7 +6,7 @@ const StyledSlider = styled.div`
 
   h2 {
     font-size: var(--font-heading-4);
-    color: var(--grey-1);
+    color: var(--color-grey-scale-grey-1);
     font-weight: var(--font-bold);
     margin-bottom: 1rem;
   }
@@ -19,7 +19,7 @@ const StyledSlider = styled.div`
     h3 {
       font-size: var(--font-body-1);
       font-weight: var(--font-medium);
-      color: var(--grey-3);
+      color: var(--color-grey-scale-grey-3);
     }
   }
 `;

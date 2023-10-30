@@ -17,7 +17,7 @@ const StyledAsideMobile = styled.div`
 `;
 
 const StyledAsideModal = styled.div`
-  background-color: var(--grey-10);
+  background-color: var(--color-grey-scale-grey-10);
   width: 100%;
   max-height: 100vh;
   overflow-y: auto;
@@ -34,11 +34,11 @@ const HeaderAsideModal = styled.div`
   h2 {
     font-size: var(--font-body-1);
     font-weight: var(--font-medium);
-    color: var(--grey-1);
+    color: var(--color-grey-scale-grey-1);
   }
 
   button {
-    color: var(--grey-4);
+    color: var(--color-grey-scale-grey-4);
     background-color: transparent;
     border: none;
     width: 20px;
@@ -47,7 +47,7 @@ const HeaderAsideModal = styled.div`
     svg {
       width: 20px;
       height: 20px;
-      fill: var(--grey-4);
+      fill: var(--color-grey-scale-grey-4);
     }
   }
 `;

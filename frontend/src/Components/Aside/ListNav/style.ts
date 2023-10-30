@@ -6,7 +6,7 @@ const StyledNavList = styled.ul`
 
   h2 {
     margin-bottom: 1rem;
-    color: var(--grey-1);
+    color: var(--color-grey-scale-grey-1);
     font-size: var(--font-heading-4);
     font-weight: var(--font-bold);
   }

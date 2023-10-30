@@ -52,17 +52,17 @@ const AsideMobile = () => {
           car.engine == initialState.engine &&
           car.mileage[0] == initialState.mileage[0] &&
           car.mileage[1] == initialState.mileage[1] ? (
-            <Button $background="grey-3" $width={5} disabled $disable={true}>
+            <Button $background="color-grey-scale-grey-3" $width={5} disabled $disable={true}>
               Realizar Pesquisa
             </Button>
           ) : (
             <>
-              <Button $background="brand-2" $width={5} onClick={submit}>
+              <Button $background="color-brand-brand-2" $width={5} onClick={submit}>
                 Realizar Pesquisa
               </Button>
 
               <Button
-                $background="brand-2"
+                $background="color-brand-brand-2"
                 $width={5}
                 onClick={handleClearFilter}
               >
