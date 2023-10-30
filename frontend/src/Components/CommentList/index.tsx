@@ -73,7 +73,7 @@ const SaleComments = () => {
             className="message-area"
             {...register("comment")}></textarea>
           {user ? (
-            <Button className="post-button" type="submit">
+            <Button $width={4} className="post-button" type="submit">
               Comentar
             </Button>
           ) : (

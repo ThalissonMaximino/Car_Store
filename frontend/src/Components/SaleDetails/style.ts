@@ -70,8 +70,8 @@ const StyledDivContainer = styled.div`
               justify-content: center;
               min-width: 50px;
               height: 32px;
-              color: var(--brand-1);
-              background-color: var(--brand-4);
+              color: var(--color-brand-brand-1);
+              background-color: var(--color-brand-brand-4);
               font-size: var(--font-body-2);
               font-weight: 500;
             }
@@ -120,13 +120,13 @@ const StyledDivContainer = styled.div`
 
       span {
         padding: 16px;
-        background-color: var(--brand-1);
+        background-color: var(--color-brand-brand-1);
         color: var(--color-grey-scale-grey-10);
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: var(--font-heading-4);
+        font-size: var(--font-heading-1);
         margin-bottom: 28px;
       }
 
