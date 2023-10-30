@@ -31,7 +31,7 @@ const StyleBanner = styled.div`
   background-position: center center;
   background-size: contain;
 
-  color: var(--grey-10);
+  color: var(--color-grey-scale-grey-10);
   text-align: center;
 
   h1 {
