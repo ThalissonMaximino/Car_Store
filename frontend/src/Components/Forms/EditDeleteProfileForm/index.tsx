@@ -118,7 +118,7 @@ const EditOrDeleteProfileForm = () => {
           >
             Excluir Perfil
           </Button>
-          <Button $color="grey-9" type="submit" $width={9} $maxWidth={10}>
+          <Button $color="color-grey-scale-grey-9" type="submit" $width={9} $maxWidth={10}>
             Salvar alterações
           </Button>
         </StyledButtonsContainer>

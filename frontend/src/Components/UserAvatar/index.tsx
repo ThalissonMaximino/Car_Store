@@ -54,7 +54,7 @@ const UserAvatar = ({ img, username, size }: TUserAvatarProps) => {
     <Avatar
       src={img}
       {...stringAvatar(username)}
-      sx={{ ...avatarSize, bgcolor: "var(--brand-2)" }}
+      sx={{ ...avatarSize, bgcolor: "var(--color-brand-brand-2)" }}
     />
   );
 };

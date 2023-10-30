@@ -45,11 +45,11 @@ export const StyledModal = styled.div`
   .modal-close-button {
     background-color: transparent;
     border: transparent;
-    color: var(--grey-4);
+    color: var(--color-grey-scale-grey-4);
     cursor: pointer;
   }
 
   .modal-close-button:hover {
-    color: var(--grey-0);
+    color: var(--color-grey-scale-grey-0);
   }
 `;
