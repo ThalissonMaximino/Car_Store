@@ -1,21 +1,68 @@
-import React from "react"
+import React from "react";
+import { StyledSaleCommentCard } from "./style";
+import { TSaleCommentCardProps } from "./@types";
+import { UserAvatar } from "../../index";
+import { useCarContext, useModal, useUserContext } from "../../../Hooks";
+import { BiEdit } from "react-icons/bi";
+import { MdDelete } from "react-icons/md";
 
+const SaleCommentCard = ({ comment }: TSaleCommentCardProps) => {
+  const date = new Date();
+  const diff = date.getTime() - Number(comment.created_at);
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
 
-export const CommentCards = ()=>{
-    return (
-        <div>
-            <div className="divDados">
-                <span className="ftimg">SM</span>
-                <h2 className="userName">Julia Lima</h2 >
-                < h3 className="daysAgo">há 4 dias</h3>
-            </div>
-            <div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
-                    been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                </p>
-            </div>
-        </div>
-    )
-}
+  const { user } = useUserContext();
+  const { setModal } = useModal();
+  const { saleFounded, setComment } = useCarContext();
 
+  const openCommentModal = (
+    event: React.MouseEvent<HTMLButtonElement>,
+    title: "Editar comentário" | "Excluir comentário"
+  ) => {
+    const commentId: string = event.currentTarget.id;
+
+    const commentFound = saleFounded?.comments.find(
+      (comment) => comment.id === commentId
+    );
+
+    commentFound ? setComment(commentFound) : null;
+
+    commentFound ? setModal(title) : null;
+  };
+
+  return (
+    <StyledSaleCommentCard>
+      <div className="comment-header">
+        <UserAvatar
+          username={`${comment.user.firstName} ${comment.user.lastName}`}
+        />
+        <h3 className="comment-author">{`${comment.user.firstName} ${comment.user.lastName}`}</h3>
+        <span>•</span>
+        <span className="comment-created-at">
+          {days === 0 ? "Hoje" : `Há ${days} dias`}
+        </span>
+      </div>
+      <p className="comment-message">{comment.comment}</p>
+      <div className="comment-buttons">
+        {comment.user.id === user?.id ? (
+          <button
+            id={comment.id}
+            onClick={(event) => openCommentModal(event, "Editar comentário")}
+          >
+            <BiEdit />
+          </button>
+        ) : null}
+        {comment.user.id === user?.id || saleFounded?.user.id === user?.id ? (
+          <button
+            id={comment.id}
+            onClick={(event) => openCommentModal(event, "Excluir comentário")}
+          >
+            <MdDelete />
+          </button>
+        ) : null}
+      </div>
+    </StyledSaleCommentCard>
+  );
+};
+
+export default SaleCommentCard;
