@@ -49,12 +49,12 @@ const StyleBanner = styled.div`
     justify-content: center;
 
     h1 {
-      font-size: var(--font-heading-1);
+      font-size: 40px;
       margin: 0;
     }
 
     h3 {
-      font-size: var(--font-heading-3);
+      font-size: 22px;
     }
   }
 `;

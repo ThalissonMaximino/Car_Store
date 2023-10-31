@@ -7,7 +7,9 @@ export const FooterStyled = styled.footer`
   width: 100%;
   background-color: var(--color-grey-scale-grey-0);
   align-self: flex-end;
-  /* margin-top: 2rem; */
+  position: absolute;
+  bottom:0;
+
   div {
     display: flex;
     flex-direction: column;
@@ -16,6 +18,7 @@ export const FooterStyled = styled.footer`
     width: 100%;
     padding: 2rem;
     gap: 2rem;
+   
     
 
     p {
