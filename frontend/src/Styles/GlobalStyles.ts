@@ -34,6 +34,7 @@ h1, h2, h3, h4, h5, h6, strong{
     justify-content: space-between;
 	background-color: var(--color-brand-brand-4);
 	overflow-x: hidden;
+	position: relative;
 }
   
 :root {
