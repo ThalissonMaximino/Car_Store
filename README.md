@@ -52,6 +52,8 @@ A car_store API oferece uma plataforma que conecta vendedores e compradores de c
 
 ```bash
   npm install
+  ou
+  yarn install
 ```
 - Rode as migrações na sua máquina para criar as tabelas do arquivo migrations no seu banco de dados
 
@@ -63,6 +65,8 @@ A car_store API oferece uma plataforma que conecta vendedores e compradores de c
 
 ```bash
   npm run dev
+  ou
+  yarn dev
 ```
 
 - Altere para a pasta do front-end
@@ -74,11 +78,15 @@ A car_store API oferece uma plataforma que conecta vendedores e compradores de c
 
 ```bash
   npm install
+  ou
+  yarn install
 ```
 - Inicie o servidor frontend
 
 ```bash
   npm run dev
+  ou
+  yarn dev
 ```
 - Atenção: para que consiga rodar o projeto localmente, os dois servidores tanto de backend e quanto frontend precisam estar rodando simultaneamente
 
