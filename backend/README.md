@@ -47,7 +47,7 @@ A car_store API oferece uma plataforma que conecta vendedores e compradores de c
   git clone https://github.com/ThalissonMaximino/Car_Store.git
 ```
 
-- Crie um arquivo .env na raiz do projeto (utilize o .env.example para preencher corretamente os dados do seu .env);
+- Na pasta do backend crie um arquivo .env na raiz (utilize o .env.example para preencher corretamente os dados do seu .env);
 
 - Crie um banco de dados postgres e configure o DATABASE_URL com as suas informações de database e de usuário postgres
 
@@ -67,6 +67,23 @@ A car_store API oferece uma plataforma que conecta vendedores e compradores de c
 ```bash
   npm run dev
 ```
+- Altere para a pasta do front-end
+
+```bash
+  cd frontend
+```
+- Instale as dependencias
+
+```bash
+  npm install
+```
+- Inicie o servidor frontend
+
+```bash
+  npm run dev
+```
+- Atenção: para que consiga rodar o projeto localmente, os dois servidores tanto de backend e quanto frontend precisam estar rodando simultaneamente
+
 ## Endpoints 
 
 Method | Endpoint | Responsability
