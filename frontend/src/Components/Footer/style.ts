@@ -9,7 +9,7 @@ export const FooterStyled = styled.footer`
   align-self: flex-end;
   position: absolute;
   bottom:0;
-
+  
   div {
     display: flex;
     flex-direction: column;
@@ -18,13 +18,16 @@ export const FooterStyled = styled.footer`
     width: 100%;
     padding: 2rem;
     gap: 2rem;
-   
-    
+     
 
     p {
       color: var(--color-grey-scale-grey-10);
       font-size: var(--font-body-2);
       font-weight: var(--font-base);
+    }
+
+    img{
+      height: 18px;
     }
     .arrowUp {
       padding: 1.2rem;
@@ -36,8 +39,12 @@ export const FooterStyled = styled.footer`
     div {
       flex-direction: row;
       justify-content: space-between;
+
+      img{
+        height: 30px;
+      }
     }
-  }
+    }
   @media (min-width: 800px) {
     div {
       a {
