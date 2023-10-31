@@ -1,6 +1,7 @@
 {
   "scripts": {
     "dev": "ts-node-dev --ignore-watch node_modules src/server.ts",
+    "migrate": "npm run typeorm migration:run -- -d ./src/data-source",
     "typeorm": "typeorm-ts-node-commonjs"
   },
   "dependencies": {
