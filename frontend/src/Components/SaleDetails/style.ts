@@ -53,7 +53,12 @@ const StyledDivContainer = styled.div`
         h2 {
           margin-bottom: 35px;
         }
-
+        
+        a {
+          padding:5px;
+          width: var(--button-width-3);
+          color: var(--color-grey-scale-grey-10)
+        }
         .price {
           display: flex;
           flex-direction: column;

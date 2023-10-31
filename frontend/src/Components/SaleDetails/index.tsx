@@ -3,7 +3,7 @@ import { StyledDivContainer, StyledSectionComments } from "./style";
 import SaleContainer from "../SalesContainer";
 import { TSaleContainerProps } from "../SalesContainer/@types";
 import ListImages from "../SalesContainer/ListImages";
-import  SalesComments from "../CommentList/index";
+import SalesComments from "../CommentList/index";
 import { Link } from "react-router-dom";
 import { useCarContext, useUserContext } from "../../Hooks";
 import LinkStyle from "../Links";
@@ -41,9 +41,9 @@ const DetailsProduct = ({ saleFounded }: TSaleContainerProps) => {
 
               {user && user.role === "buyer" ? (
                 <LinkStyle
-                  className="btnEntrar"
                   $background="color-brand-brand-2"
-                  $width={1}
+                  $width={2}
+                  $color="color-grey-scale-grey-10"
                   $align="center"
                   type="button"
                   to={`https://api.whatsapp.com/send?phone=+55${
@@ -52,17 +52,18 @@ const DetailsProduct = ({ saleFounded }: TSaleContainerProps) => {
                     saleFounded.brand
                   )}%20${convertStr(saleFounded.model)}%20ano%20${convertStr(
                     saleFounded.year
-                  )}%20no%20valor%20de%20R$${saleFounded.price.toFixed(2)}.`}>
+                  )}%20no%20valor%20de%20R$${saleFounded.price.toFixed(2)}.`}
+                >
                   Comprar
                 </LinkStyle>
               ) : !user ? (
                 <LinkStyle
-                  className="btnEntrar"
                   $background="color-brand-brand-2"
                   $width={1}
                   $align="center"
                   type="button"
-                  to={"/register"}>
+                  to={"/register"}
+                >
                   Comprar
                 </LinkStyle>
               ) : null}
