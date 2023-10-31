@@ -8,16 +8,16 @@ export const StyledSaleComments = styled.div`
 
   margin-bottom: 32px;
 
+  
   .comments-section {
     display: flex;
     flex-direction: column;
     gap: 25px;
   }
-
+  
   .comments-section > h2 {
-    font-size: var(--font-heading-5);
-    line-height: 170%;
-    font-weight: var(--font-semibold);
+    font-size: var(--font-heading-3);
+    font-weight: var(--font-bold);
   }
 
   .comments-list {
@@ -83,6 +83,7 @@ export const StyledSaleComments = styled.div`
     border-radius: 12px;
     cursor: pointer;
   }
+  
 
   @media (min-width: 1200px) {
     padding: 50px;

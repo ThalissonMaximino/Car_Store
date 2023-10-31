@@ -58,6 +58,7 @@ export const LoginForm = () => {
           Entrar
         </Button>
         <span>Ainda não possui conta?</span>
+        <Link className="registerBtn" to ={"/register"}>
         <Button
           className="text-style-inputs-buttons-input-label"
           $background="color-grey-scale-grey-10"
@@ -68,6 +69,7 @@ export const LoginForm = () => {
         >
           Cadastrar
         </Button>
+        </Link>
       </StyledForm>
     </>
   );

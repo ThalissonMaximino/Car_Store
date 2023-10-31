@@ -11,7 +11,9 @@ export const StyledForm = styled.form`
   gap:32px;
   border: 1px solid var(--color-grey-scale-grey-10);
   background-color: var(--color-grey-scale-grey-10);
-
+  margin-top:80px;
+  
+  
   a{ 
     align-self: flex-end;
     color:var(--color-grey-scale-grey-2);
@@ -20,7 +22,10 @@ export const StyledForm = styled.form`
   a:hover{
     color:var(--color-grey-scale-grey-1);
   }
-
+  
+  .registerBtn{
+    align-self: normal;
+  }
   span{
     align-self: center;
     color:var(--color-grey-scale-grey-2);

@@ -11,14 +11,14 @@ const StyledDivContainer = styled.div`
   margin: 0 auto;
 
   h2 {
-    font-size: var(--font-heading-6);
-    font-weight: 600;
+    font-size: var(--font-heading-3);
+    font-weight: var(--font-bold);
     margin-bottom: 32px;
   }
 
   p {
     font-size: var(--font-body-1);
-    font-weight: 400;
+    font-weight: 500;
     color: var(--color-grey-scale-grey-2);
     line-height: 25px;
   }
@@ -79,8 +79,8 @@ const StyledDivContainer = styled.div`
         }
 
         p {
-          font-size: var(--font-heading-6);
-          font-weight: 500;
+          font-size: var(--font-heading-4);
+          font-weight: 600;
           margin-bottom: 36px;
           color: var(--color-grey-scale-grey-1);
         }

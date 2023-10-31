@@ -24,7 +24,8 @@ const StyledHeader = styled.header`
 
     a {
       h1 {
-        font-size: var(--font-heading-3);
+        font-size: var(--font-heading-1);
+        font-weight: bold;
         background-image: linear-gradient(
           to left,
           var(--color-brand-brand-1),
@@ -36,7 +37,8 @@ const StyledHeader = styled.header`
       }
 
       span {
-        font-size: var(--font-heading-6);
+        font-size: var(--font-heading-4);
+        font-weight: bold;
       }
     }
   }
