@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { StyledDivContainer, StyledSectionComments } from "./style";
 import SaleContainer from "../SalesContainer";
 import { TSaleContainerProps } from "../SalesContainer/@types";
@@ -7,10 +7,27 @@ import SalesComments from "../CommentList/index";
 import { Link } from "react-router-dom";
 import { useCarContext, useUserContext } from "../../Hooks";
 import LinkStyle from "../Links";
+import { TJwtDecode } from "../../Providers/UserContext/@types";
+import jwt_decode from "jwt-decode";
 
 const DetailsProduct = ({ saleFounded }: TSaleContainerProps) => {
   const { convertStr } = useCarContext();
   const { user } = useUserContext();
+
+  const { retrieveUser} =
+    useUserContext();
+
+    const { change } = useCarContext();
+
+    useEffect(() => {
+      const token = localStorage.getItem("frontEndMotors:token");
+  
+      if (token) {
+        const tokenDecoded: TJwtDecode = jwt_decode(token);
+  
+        retrieveUser(tokenDecoded.userId);
+      }
+    }, [change]);
 
   return (
     <>
